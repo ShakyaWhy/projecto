@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Kanban</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to the board</a>
+<div id="app">
+	<aside id="sidebar" aria-label="Projects"></aside>
+	<div id="scrim" hidden></div>
+	<div class="content">
+		<header id="top"></header>
+		<div id="offline" role="alert" hidden></div>
+		<main id="main" tabindex="-1" aria-live="off"><div class="loading">Loading&hellip;</div></main>
+	</div>
+</div>
+<aside id="drawer" aria-label="Card details" hidden></aside>
+<div id="toasts" role="status" aria-live="polite"></div>
+<dialog id="modal"></dialog>
+<dialog id="palette" aria-label="Search and commands"></dialog>
+<script src="app.js" type="module"></script>
+</body>
+</html>
